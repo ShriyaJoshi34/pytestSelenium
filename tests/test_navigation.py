@@ -11,6 +11,7 @@ We are checking the successful navigation to the resources page"""
 class TestNav:
     def test_nav(self):
         home_page = HomePage(self.driver)
+        time.sleep(5)
         home_page.hover_on_resources_section()  # hover over resource section on the home page
         home_page.click_on_resources_section()  # select All Resources
         time.sleep(10)

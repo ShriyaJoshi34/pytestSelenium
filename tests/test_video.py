@@ -10,6 +10,7 @@ from pages.HomePage import HomePage
 class TestVideo:
     def test_video(self):
         home_page = HomePage(self.driver)
+        time.sleep(5)
         home_page.click_cancel()  # click on the cancel button for accept/decline cookies section
         home_page.hover_video()  # hover over the video
         home_page.click_video()  # click on the video to play it
